@@ -13,6 +13,7 @@
 		BaseClass BS = new BaseClass();
 		Login login = new Login();
 		HomePage HP = new HomePage();
+		
 	
 		@Test
 		public void TS_SDIR_016() throws Exception {
@@ -21,6 +22,9 @@
 			try {
 	
 				login.URL();
+				
+				Thread.sleep(2000);
+				
 				HP.Search(testname);
 	
 				Boolean HB = HP.HB();
@@ -45,6 +49,8 @@
 			try {
 	
 				login.URL();
+				
+				Thread.sleep(2000);
 	
 				HP.Search(testname);
 				

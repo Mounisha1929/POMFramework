@@ -39,6 +39,7 @@ public class BaseClass {
 	public void logger() {
 		DOMConfigurator.configure(".\\src\\test\\resources\\log4j.xml");
 	}
+	
 
 	// To instantiate browsers
 	@BeforeTest
@@ -109,7 +110,7 @@ public class BaseClass {
 		try {
 
 			ConfigData = Excel.setMapData(
-					"C:\\Users\\mounisha.m\\git\\POMFramework\\POM\\Test Components\\Test configuration File.xlsx",
+					".\\Test Components\\Test configuration File.xlsx",
 					"0");
 		} catch (Exception e) {
 
