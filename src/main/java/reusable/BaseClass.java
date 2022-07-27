@@ -224,7 +224,7 @@ public class BaseClass {
 	public void startReport() {
 
 		try {
-			ExtentSparkReporter spark = new ExtentSparkReporter("Spark" + "_" + timeStamp + ".html");
+			ExtentSparkReporter spark = new ExtentSparkReporter(".\\reports\\"+"Spark" + "_" + timeStamp + ".html");
 			extent.attachReporter(spark);
 			
 			log.info("*******************Report Started!!!***************");

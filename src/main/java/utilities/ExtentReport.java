@@ -15,6 +15,7 @@ public class ExtentReport extends BaseClass {
 		if(Status == "Pass") {
 		test = extent.createTest(testname, TestScript.get(R).get("Test Script Description"));
 		test.pass(Restut);
+		test.info(TestScript.get(R).get("Test Steps"));
 		test.assignCategory(TestScript.get(R).get("Module Name"));
 		test.assignCategory(TestScript.get(R).get("Testing type"));
 		test.assignCategory(TestScript.get(R).get("Test Category"));
@@ -28,6 +29,7 @@ public class ExtentReport extends BaseClass {
 		else if (Status == "Fail") {
 			test = extent.createTest(testname, TestScript.get(R).get("Test Script Description"));
 			test.fail(Restut);
+			test.info(TestScript.get(R).get("Test Steps"));
 			test.assignCategory(TestScript.get(R).get("Module Name"));
 			test.assignCategory(TestScript.get(R).get("Testing type"));
 			test.assignCategory(TestScript.get(R).get("Test Category"));
@@ -40,6 +42,7 @@ public class ExtentReport extends BaseClass {
 		else if (Status == "Exception") {
 			test = extent.createTest(testname, TestScript.get(R).get("Test Script Description"));
 			test.fail(Restut);
+			test.info(TestScript.get(R).get("Test Steps"));
 			test.assignCategory(TestScript.get(R).get("Module Name"));
 			test.assignCategory(TestScript.get(R).get("Testing type"));
 			test.assignCategory(TestScript.get(R).get("Test Category"));
@@ -60,6 +63,7 @@ public class ExtentReport extends BaseClass {
 			if(Status == "Pass") {
 			test = extent.createTest(testname, TestScript.get(R).get("Test Script Description"));
 			test.pass(Restut);
+			test.info(TestScript.get(R).get("Test Steps"));
 			test.assignCategory(TestScript.get(R).get("Module Name"));
 			test.assignCategory(TestScript.get(R).get("Testing type"));
 			test.assignCategory(TestScript.get(R).get("Test Category"));
@@ -73,6 +77,7 @@ public class ExtentReport extends BaseClass {
 			else if (Status == "Fail") {
 				test = extent.createTest(testname, TestScript.get(R).get("Test Script Description"));
 				test.fail(Restut);
+				test.info(TestScript.get(R).get("Test Steps"));
 				test.assignCategory(TestScript.get(R).get("Module Name"));
 				test.assignCategory(TestScript.get(R).get("Testing type"));
 				test.assignCategory(TestScript.get(R).get("Test Category"));
@@ -85,6 +90,7 @@ public class ExtentReport extends BaseClass {
 			else if (Status == "Exception") {
 				test = extent.createTest(testname, TestScript.get(R).get("Test Script Description"));
 				test.fail(Restut);
+				test.info(TestScript.get(R).get("Test Steps"));
 				test.assignCategory(TestScript.get(R).get("Module Name"));
 				test.assignCategory(TestScript.get(R).get("Testing type"));
 				test.assignCategory(TestScript.get(R).get("Test Category"));
